@@ -4,4 +4,10 @@ import com.cloudage.membercenter.entity.User;
 
 public interface IUserService {
 	User save(User user);
+
+	User findByAccount(String account);
+
+	User findById(Integer id);
+
+	User findByEmail(String email);
 }
